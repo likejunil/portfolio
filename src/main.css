@@ -18,7 +18,7 @@
     --color-theme: #ba6b6c;
 
     /* Font size */
-    --font-large: 3 rempx;
+    --font-large: 48px;
     --font-medium: 28px;
     --font-regular: 18px;
     --font-small: 16px;
@@ -103,10 +103,14 @@ p {
 
 /* ------------------------------------------------------- */
 /* ------------------------------------------------------- */
+.home__avatar {
+    width: 200px;
+    height: 200px;
+}
 
 
 /* ------------------------------------------------------- */
-/* test */
+/* test for position */
 /* ------------------------------------------------------- */
 .container {
     position: relative;
