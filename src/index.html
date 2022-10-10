@@ -44,48 +44,56 @@
     <main>
         <!-- home -->
         <section id="home">
-            <img class="home__avatar" src="../imgs/쥔장사진.jpg" alt="주인장의 사진">
-            <h1 class="home__title">저는 시니어 개발자입니다.</h1>
-            <p class="home__desc">
-                우주와 세상이 돌아가는 원리와 질서에 관심이 많은 프로그래머입니다.<br/>
-                수학을 전공했고 논리적인 흐름을 좋아합니다.<br/>
-                부분에 함몰되지 않고 전체 그림을 보는 것을 중요하게 생각합니다.<br/>
-                돈 보다는 일을 일 보다는 관계를 중요시합니다.<br/>
-            </p>
-            <button class="home__contact">CONTACT ME</button>
+            <div class="container">
+                <img class="home__avatar" src="../imgs/쥔장사진.jpg" alt="주인장의 사진">
+                <h1 class="home__title">저는 시니어 개발자입니다.</h1>
+                <p class="home__desc">
+                    우주와 세상이 돌아가는 원리와 질서에 관심이 많은 프로그래머입니다.<br/>
+                    수학을 전공했고 논리적인 흐름을 좋아합니다.<br/>
+                    부분에 함몰되지 않고 전체 그림을 보는 것을 중요하게 생각합니다.<br/>
+                    돈 보다는 일을 일 보다는 관계를 중요시합니다.<br/>
+                </p>
+                <button class="home__contact">CONTACT ME</button>
+            </div>
         </section>
 
         <!-- about -->
         <section id="about">
-            <h1 class="about__title">About me</h1>
-            <p class="about__desc">
-                2002년부터 개발을 해왔습니다.<br/>
-                리눅스 환경에서 C 를 사용했고 시스템 및 네트워크 프로그래밍을 했습니다.<br/>
-                os 와 process 의 구조에 대한 기본적인 이해를 중요하게 생각합니다.<br/>
-                지금은 프론트부터 백엔드까지 웹에 관련된 것들을 개발하고 있습니다.<br/>
-                front-end 에서 back-end 까지 전반적인 웹 서비스의 흐름을 이해합니다.<br/>
-                block chain 과 data 분석을 통한 통찰 추론에 관심이 있습니다.<br/>
-            </p>
-            <div class="about__majors">
-                <div class="major">
-                    <i class="fa-solid fa-c"></i>
-                    <h2 class="major__title">C on Linux</h2>
-                    <p class="major__desc">
-                        프로세스 관리 및 쓰레드를 활용한 병렬 프로그래밍<br>
-                        IPC 프로그래밍 (메시지큐, 세마포어, 공유메모리, 시그널)<br>
-                        TCP(UDP)/IP 네트워크 프로그래밍
-                    </p>
-                </div>
-                <div class="major">
-                    <i class="fa-brands fa-java"></i>
-                    <h2 class="major__title">Java on Spring</h2>
-                    <p class="major__desc">
-                        spring 으로 SOLID 에 충실한 객체지향 프로그래밍<br>
-                        jpa, querydsl 을 활용한 ORM 기술 사용<br>
-                        spring security 를 통한 인증/인가 제어<br>
-                        aop 를 활용한 모듈 중심 프로그래밍<br>
-                        spring batch 를 활용한 데이터 가공
-                    </p>
+            <div class="container">
+                <h1 class="about__title">About me</h1>
+                <p class="about__desc">
+                    2002년부터 개발을 해왔습니다.<br/>
+                    리눅스 환경에서 C 를 사용했고 시스템 및 네트워크 프로그래밍을 했습니다.<br/>
+                    os 와 process 의 구조에 대한 기본적인 이해를 중요하게 생각합니다.<br/>
+                    지금은 프론트부터 백엔드까지 웹에 관련된 것들을 개발하고 있습니다.<br/>
+                    front-end 에서 back-end 까지 전반적인 웹 서비스의 흐름을 이해합니다.<br/>
+                    block chain 과 data 분석을 통한 통찰 추론에 관심이 있습니다.<br/>
+                </p>
+                <div class="about__majors">
+                    <div class="major">
+                        <div class="major__icon">
+                            <i class="fa-solid fa-c"></i>
+                        </div>
+                        <h2 class="major__title">C on Linux</h2>
+                        <p class="major__desc">
+                            프로세스 관리 및 쓰레드를 활용한 병렬 프로그래밍<br>
+                            IPC 프로그래밍 (메시지큐, 세마포어, 공유메모리, 시그널)<br>
+                            TCP(UDP)/IP 네트워크 프로그래밍
+                        </p>
+                    </div>
+                    <div class="major">
+                        <div class="major__icon">
+                            <i class="fa-brands fa-java"></i>
+                        </div>
+                        <h2 class="major__title">Java on Spring</h2>
+                        <p class="major__desc">
+                            spring 으로 SOLID 에 충실한 객체지향 프로그래밍<br>
+                            jpa, querydsl 을 활용한 ORM 기술 사용<br>
+                            spring security 를 통한 인증/인가 제어<br>
+                            aop 를 활용한 모듈 중심 프로그래밍<br>
+                            spring batch 를 활용한 데이터 가공
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -239,17 +247,17 @@
 
     <footer></footer>
 
-    <div class="container" hidden>
-        <div class="box"></div>
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+    <div class="test-container" hidden>
+        <div class="test-box"></div>
+        <div class="test-box test-box1"></div>
+        <div class="test-box test-box2"></div>
+        <div class="test-box"></div>
+        <div class="test-box"></div>
+        <div class="test-box"></div>
+        <div class="test-box"></div>
+        <div class="test-box"></div>
+        <div class="test-box"></div>
+        <div class="test-box"></div>
         <div class="it" color="red">빨강색입니다.</div>
     </div>
 </body>
