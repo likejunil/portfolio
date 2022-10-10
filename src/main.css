@@ -11,7 +11,7 @@
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
     --color-light-grey: #7c7979;
-    --color-blue: #73aace;
+    --color-blue: #35718d;
     --color-dark-blue: #2b6381;
     --color-yellow: #fff7d1;
     --color-orange: #feb546;
@@ -77,29 +77,25 @@ button {
 h1 {
     font-size: var(--font-large);
     font-weight: var(--weight-bold);
-    color: var(--color-black);
-    margin: 16px 0;
+    margin: 1rem 0;
 }
 
 h2 {
     font-size: var(--font-medium);
     font-weight: var(--weight-semi-bold);
-    color: var(--color-black);
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 h3 {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
-    margin: 8px 0;
+    margin: 0.5rem 0;
 }
 
 p {
     font-size: var(--font-regular);
     font-weight: var(--weight-regular);
-    color: var(--color-black);
-    margin: 4px 0;
+    margin: 0.25rem 0;
 }
 
 /* ------------------------------------------------------- */
@@ -134,7 +130,7 @@ p {
     font-weight: var(--weight-semi-bold);
     cursor: pointer;
 
-    transition: all 300ms ease;
+    transition: all var(--animation-short-duration) ease;
 }
 
 .nav__menu--element:hover {
@@ -143,11 +139,47 @@ p {
     border-radius: 6px;
 }
 
-.home__avatar {
-    width: 200px;
-    height: 200px;
+/* ------------------------------------------------------- */
+/* home */
+/* ------------------------------------------------------- */
+#home {
+    padding: 4em 0 2em 0;
+    background: rgb(47, 131, 32);
+    background: linear-gradient(40deg, rgba(47, 131, 32, 1) 11%, rgba(9, 9, 121, 1) 85%, rgba(0, 212, 255, 1) 100%);
+    text-align: center;
+
+    color: var(--color-white);
 }
 
+.home__avatar {
+    margin: 1em;
+    border: 1px solid var(--color-white);
+    border-radius: 1em;
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.home__desc {
+    padding: 0.8em;
+    color: var(--color-light-white);
+}
+
+.home__contact {
+    margin: 1.4em;
+    padding: 1.0em;
+    border: 2px solid var(--color-white);
+    border-radius: 6px;
+
+    font-size: 1.0em;
+    font-weight: var(--weight-bold);
+    color: var(--color-white);
+
+    transition: background-color 300ms ease;
+}
+
+.home__contact:hover {
+    background-color: var(--color-dark-blue);
+}
 
 /* ------------------------------------------------------- */
 /* test for position */
