@@ -10,7 +10,7 @@
     --color-dark-pink: #ff6863;
     --color-dark-grey: #4d4d4d;
     --color-grey: #616161;
-    --color-light-grey: #7c7979;
+    --color-light-grey: #a9a4a4;
     --color-blue: #35718d;
     --color-dark-blue: #1e4b64;
     --color-yellow: #fff7d1;
@@ -104,7 +104,7 @@ h3 {
 }
 
 p {
-    font-size: var(--font-regular);
+    font-size: calc(var(--font-regular) * 0.9);
     font-weight: var(--weight-regular);
     padding: 0.8em;
     margin: 0.25rem 0;
@@ -242,6 +242,148 @@ p {
 .major__desc {
     color: var(--color-light-grey);
     font-size: var(--font-small);
+}
+
+/* ------------------------------------------------------- */
+/* skills */
+/* ------------------------------------------------------- */
+#skills {
+    background-color: var(--color-yellow);
+}
+
+.skills__title {
+    color: var(--color-theme);
+}
+
+.skills__desc {
+    color: var(--color-dark-grey);
+}
+
+.skills__set {
+    margin: 2em 4em;
+    background-color: var(--color-light-grey);
+
+    color: var(--color-white);
+    display: flex;
+    justify-content: center;
+}
+
+.skills__left {
+    flex-basis: 60%;
+}
+
+.skills__skill {
+    padding-top: 0.6em;
+    padding-bottom: 2em;
+    background-color: var(--color-grey);
+}
+
+.skills__right {
+    flex-basis: 40%;
+}
+
+.skills__tools {
+    padding-top: 0.6em;
+    padding-bottom: 2em;
+    background-color: var(--color-dark-grey);
+}
+
+.skills__db {
+    padding-top: 0.6em;
+    padding-bottom: 2em;
+}
+
+.skill__title,
+.tools__title,
+.etc__title {
+    font-size: 1.4em;
+    font-weight: var(--weight-bold);
+}
+
+.skill__element,
+.tools__element,
+.etc__element {
+    padding: 0.2em 1.2em;
+    font-size: 1.1em
+}
+
+.skill__desc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.skill__base {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background-color: var(--color-dark-grey);
+}
+
+.skill__value {
+    position: absolute;
+    top: -3px;
+    width: 90%;
+    height: 6px;
+    background-color: var(--color-orange);
+}
+
+/* ------------------------------------------------------- */
+/* work */
+/* ------------------------------------------------------- */
+#work {
+    background-color: var(--color-light-grey);
+    color: var(--color-black);
+}
+
+.work__title {
+    margin-bottom: 0.8em;
+}
+
+.project__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.project {
+    margin: 0.2em;
+}
+
+.project__anchor {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 12em;
+}
+
+.project__img {
+    width: 100%;
+    height: 100%;
+}
+
+.project__title {
+    font-weight: var(--weight-semi-bold);
+    font-size: 1.2em;
+}
+
+.project__desc {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-black);
+    opacity: 0;
+
+    text-align: center;
+    transition: all var(--animation-short-duration) ease;
+}
+
+.project__desc:hover {
+    top: 0;
+    opacity: 0.8;
 }
 
 /* ------------------------------------------------------- */
