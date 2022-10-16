@@ -31,13 +31,16 @@
                 <a href="#">june1</a>
             </div>
             <ul class="nav__menu">
-                <li class="nav__menu--element">Home</li>
-                <li class="nav__menu--element">About</li>
-                <li class="nav__menu--element">Skills</li>
-                <li class="nav__menu--element">Work</li>
-                <li class="nav__menu--element">Testimonial</li>
-                <li class="nav__menu--element">Contact</li>
+                <li class="nav__menu--element" data-key="home">Home</li>
+                <li class="nav__menu--element" data-key="about">About</li>
+                <li class="nav__menu--element" data-key="skills">Skills</li>
+                <li class="nav__menu--element" data-key="work">Work</li>
+                <li class="nav__menu--element" data-key="testimonials">Testimonial</li>
+                <li class="nav__menu--element" data-key="contact">Contact</li>
             </ul>
+            <div class="nav__toggle">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
         </nav>
     </header>
 
@@ -60,12 +63,14 @@
         <!-- about -->
         <section id="about">
             <div class="container">
-                <h1 class="about__title">About me</h1>
-                <p class="about__desc">
+                <h1 class="about__title title">About me</h1>
+                <h2 class="about__sentence">
                     2002년부터 개발을 해왔습니다.<br/>
-                    리눅스 환경에서 C 를 사용했고 시스템 및 네트워크 프로그래밍을 했습니다.<br/>
-                    os 와 process 의 구조에 대한 기본적인 이해를 중요하게 생각합니다.<br/>
-                    지금은 프론트부터 백엔드까지 웹에 관련된 것들을 개발하고 있습니다.<br/>
+                </h2>
+                <p class="about__desc">
+                    리눅스 환경에서 C 를 사용하여 시스템 및 네트워크 프로그래밍을 했습니다.<br/>
+                    OS 와 process 의 구조에 대한 기본적인 이해를 중요하게 생각합니다.<br/>
+                    지금은 client 부터 server 까지 웹에 관련된 것들을 개발하고 있습니다.<br/>
                     front-end 에서 back-end 까지 전반적인 웹 서비스의 흐름을 이해합니다.<br/>
                     block chain 과 data 분석을 통한 통찰 추론에 관심이 있습니다.<br/>
                 </p>
@@ -77,8 +82,8 @@
                         <h2 class="major__title">C on Linux</h2>
                         <p class="major__desc">
                             프로세스 관리 및 쓰레드를 활용한 병렬 프로그래밍<br>
-                            IPC 프로그래밍 (메시지큐, 세마포어, 공유메모리, 시그널)<br>
-                            TCP(UDP)/IP 네트워크 프로그래밍
+                            IPC 프로그래밍 (파이프, 메시지큐, 세마포어, 공유메모리, 시그널)<br>
+                            TCP(UDP) / IP 네트워크 프로그래밍
                         </p>
                     </div>
                     <div class="major">
@@ -101,13 +106,23 @@
         <!-- skills -->
         <section id="skills">
             <div class="container">
-                <h1 class="skills__title">Skills</h1>
+                <h1 class="skills__title title">Skills</h1>
+                <h3 class="skills__sentence">
+                    도구는 익숙해지는 것만큼 도구 자체의 특징을 이해하는 것도 중요하다고 생각합니다.
+                </h3>
                 <p class="skills__desc">
-                    프로그래밍에 있어서 언어는 꼭 필요한 도구입니다.<br/>
-                    하나의 도구를 능숙하게 다루기 위해서는 익숙해지기까지 시간을 투자해야 합니다.<br/>
-                    익숙해지는 것 이상으로 중요한 것은 도구의 본질을 이해하는 것입니다.<br/>
-                    본질에 대한 이해가 깊어질수록 다양한 도구를 사용하는 일이 쉬워집니다.<br/>
-                    중요한 것은 '어떤 도구를 사용하느냐'가 아니라 '도구를 얼마나 이해하는가'라고 생각합니다.
+                    OS 위에서 각 CPU 구조에 맞는 컴파일러를 갖춘 C 나 C++ 은 빠른 실행 속도를 자랑하고<br/>
+                    Virtual Machine 위에서 Bytecode 로 변환되어 실행되는 Java 나 Scala 는 OS 에 비종속적이며<br/>
+                    Browser 에서 실행되는 Javascript 는 web 의 영역에서 독보적입니다.<br/>
+                    V8 엔진을 기반으로 한 nodejs 실행 환경의 Javascript 는 one thread 비동기 방식의 장점을 활용하고<br/>
+                    C 언어와의 접착성이 좋은 Python 은 수 많은 library 와 쉬운 문법으로 압도적인 생산성을 보여줍니다.<br/>
+                    <br/>
+                    CPU 의 발전 방향이 고성능 집중에서 멀티 코어 분산으로 흐르면서 동시 실행이 중요한 화두가 되었고<br/>
+                    개발의 패러다임 역시 동시 실행에 효율적인 함수형 프로그래밍을 받아들이고 있습니다.<br/>
+                    Java 는 함수를 일급 객체로 다루기 위해 functional interface 와 lamda 를 도입했고<br/>
+                    Stream 을 통해 병렬 실행을 적극적으로 지원하고 있습니다.<br/>
+
+
                 </p>
                 <div class="skills__set">
                     <div class="skills__left">
@@ -179,6 +194,14 @@
                         </div>
                     </div>
                     <div class="skills__right">
+                        <div class="skills__db">
+                            <h3 class="db__title">Database</h3>
+                            <ul class="db__list">
+                                <li class="db__element">Oracle</li>
+                                <li class="db__element">Mysql, MariaDB</li>
+                                <li class="db__element">PostgreSQL</li>
+                            </ul>
+                        </div>
                         <div class="skills__tools">
                             <h3 class="tools__title">Tools</h3>
                             <ul class="tools__list">
@@ -186,14 +209,9 @@
                                 <li class="tools__element">IntelliJ</li>
                                 <li class="tools__element">WebStorm</li>
                                 <li class="tools__element">PyCharm</li>
+                                <li class="tools__element">CLion</li>
                                 <li class="tools__element">DataGrip</li>
                                 <li class="tools__element">Git</li>
-                            </ul>
-                        </div>
-                        <div class="skills__db">
-                            <h3 class="etc__title">Etc</h3>
-                            <ul class="etc__list">
-                                <li class="etc__element">Git</li>
                             </ul>
                         </div>
                     </div>
@@ -204,7 +222,7 @@
         <!-- work -->
         <section id="work">
             <div class="container">
-                <h1 class="work__title">Project</h1>
+                <h1 class="work__title title">Project</h1>
                 <div class="project__list">
                     <div class="project">
                         <h2 class="project__title">RMS</h2>
@@ -240,7 +258,7 @@
         <!-- testimonials -->
         <section id="testimonials">
             <div class="container">
-                <h1 class="testimonials__title">Testimonials</h1>
+                <h1 class="testimonials__title title">Testimonials</h1>
                 <div class="testimonial__list">
                     <div class="testimonial">
                         <img class="testimonial__avatar" src="../imgs/testimonial/빌게이츠.png" alt="빌게이츠 이미지">
@@ -266,7 +284,7 @@
 
         <!-- contact -->
         <section id="contact">
-            <h1 class="contact__title">contact me</h1>
+            <h1 class="contact__title title">contact me</h1>
             <h2 class="contact__desc">likejunil@gmail.com</h2>
             <p class="contact__desc">
                 좋은 인연 위에 재밌는 일을 하고 싶습니다.<br/>
@@ -274,6 +292,10 @@
             </p>
             <i class="contact__smile fa-regular fa-face-grin-squint-tears"></i>
         </section>
+
+        <a class="arrow-up">
+            <i class="fa-sharp fa-solid fa-arrow-up"></i>
+        </a>
     </main>
 
     <footer>
